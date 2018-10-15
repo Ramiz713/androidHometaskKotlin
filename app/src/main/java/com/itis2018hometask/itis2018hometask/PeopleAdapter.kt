@@ -1,7 +1,6 @@
 package com.itis2018hometask.itis2018hometask
 
 import android.support.v7.recyclerview.extensions.ListAdapter
-import android.support.v7.util.DiffUtil
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
@@ -33,12 +32,4 @@ class PeopleAdapter : ListAdapter<PeopleItem, PeopleAdapter.PeopleHolder>(DiffCa
             Glide.with(this).load(item.image).into(person_image)
         }
     }
-}
-
-class DiffCallback : DiffUtil.ItemCallback<PeopleItem>() {
-    override fun areItemsTheSame(oldItem: PeopleItem?, newItem: PeopleItem?): Boolean =
-            oldItem?.name == newItem?.name
-
-    override fun areContentsTheSame(oldItem: PeopleItem?, newItem: PeopleItem): Boolean =
-            oldItem == newItem
 }

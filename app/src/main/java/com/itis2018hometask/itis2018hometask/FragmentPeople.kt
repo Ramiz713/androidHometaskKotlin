@@ -19,7 +19,7 @@ class FragmentPeople : Fragment() {
         val view = inflater.inflate(R.layout.fragment_people, container, false)
         peopleList = ArrayList<PeopleItem>()
         initList()
-        val recycler = view.findViewById(R.id.rv_people) as RecyclerView
+        val recycler = view.findViewById<RecyclerView>(R.id.rv_people)
         recycler.layoutManager = LinearLayoutManager(activity, LinearLayoutManager.VERTICAL, false)
         recycler.adapter = adapter
         adapter.submitList(peopleList)

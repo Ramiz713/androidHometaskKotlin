@@ -12,7 +12,9 @@ class FragmentEmpty : Fragment() {
     companion object {
         private const val MY_STRING = "my_string"
         fun newInstance(name: String): FragmentEmpty = FragmentEmpty().apply {
-            this.arguments = Bundle(1).apply { putString(MY_STRING, name) }
+            arguments = Bundle(1).apply {
+                putString(MY_STRING, name)
+            }
         }
     }
 
