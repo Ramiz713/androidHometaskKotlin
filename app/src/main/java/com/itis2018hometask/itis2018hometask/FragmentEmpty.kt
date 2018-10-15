@@ -1,6 +1,5 @@
 package com.itis2018hometask.itis2018hometask
 
-
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.view.LayoutInflater

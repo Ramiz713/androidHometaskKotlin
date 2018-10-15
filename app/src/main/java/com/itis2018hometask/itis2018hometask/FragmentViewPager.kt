@@ -1,6 +1,5 @@
 package com.itis2018hometask.itis2018hometask
 
-
 import android.os.Bundle
 import android.support.design.widget.TabLayout
 import android.support.v4.app.Fragment
@@ -11,11 +10,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 
-
 class FragmentViewPager : Fragment() {
 
     fun newInstance(): FragmentViewPager = FragmentViewPager()
-
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
