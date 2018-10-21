@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">Hometask</string>
-    <string name="title_activity_bottom_navigation">BottomNavigationActivity</string>
-    <string name="title_home">Home</string>
-    <string name="title_people">People</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="app_name">Alarm</string>
+    <string name="welcome">"Привет!\n Установи время своего будильника"</string>
+    <string name="channel_name">Будильник</string>
+    <string name="channel_description">Канал для будульника</string>
+    <string name="congratulation">Вам удалось встать!\n Вы большой молодец ;)</string>
 </resources>

@@ -16,6 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".WakeUpActivity"
+            android:theme="@style/WakeUpTheme"></activity>
+
+        <receiver android:name=".AlarmReceiver"></receiver>
     </application>
 
 </manifest>
