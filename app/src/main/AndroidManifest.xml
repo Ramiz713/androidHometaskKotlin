@@ -7,8 +7,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:supportsRtl="true">
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,11 +15,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".WakeUpActivity"
-            android:theme="@style/WakeUpTheme"></activity>
+        <activity android:name=".PlayerActivity" />
 
-        <receiver android:name=".AlarmReceiver"></receiver>
+        <service
+            android:name=".PlayerService"
+            android:enabled="true"
+            android:exported="true"></service>
+        <activity android:name=".SettingsActivity"></activity>
     </application>
 
 </manifest>
