@@ -4,6 +4,7 @@ import android.content.*
 import android.os.Bundle
 import android.os.IBinder
 import android.support.v4.app.ActivityOptionsCompat
+import android.support.v4.content.ContextCompat
 import android.support.v4.view.ViewCompat
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.preference.PreferenceManager
@@ -31,6 +32,8 @@ class MainActivity : AppCompatActivity() {
 
     private val adapter = SongAdapter { position: Int, image: ImageView ->
         mService?.playSong(position)
+        val serviceIntent = Intent(this, PlayerService::class.java)
+        ContextCompat.startForegroundService(this, serviceIntent)
         val intent = Intent(this, PlayerActivity::class.java)
         intent.putExtra("Song item", songList.get(position))
         val transitionName = ViewCompat.getTransitionName(image)
@@ -64,9 +67,9 @@ class MainActivity : AppCompatActivity() {
         rv_song.adapter = adapter
         adapter.submitList(songList)
 
-        val bindIntent = Intent(this, PlayerService::class.java)
-        bindIntent.action = IPlayerServiceInterface::class.java.name
-        bindService(bindIntent, mConnection, Context.BIND_AUTO_CREATE)
+        val serviceIntent = Intent(this, PlayerService::class.java)
+        serviceIntent.action = IPlayerServiceInterface::class.java.name
+        bindService(serviceIntent, mConnection, Context.BIND_AUTO_CREATE)
     }
 
     override fun onDestroy() {
