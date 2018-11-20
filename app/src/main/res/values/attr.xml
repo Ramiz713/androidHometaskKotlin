@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <declare-styleable name="customAttr">
-        <attr name="settingsIcon" format="reference" />
-        <attr name="pauseIcon" format="reference" />
-        <attr name="nextIcon" format="reference" />
-        <attr name="prevIcon" format="reference" />
-    </declare-styleable>
-</resources>

@@ -5,9 +5,14 @@
     tools:context=".FragmentPeople">
 
     <item
-        android:id="@+id/settings"
-        android:icon="?attr/settingsIcon"
-        android:title="Settings"
+        android:id="@+id/action_sort_name"
+        android:icon="@drawable/ic_sort_by_alpha_black_24dp"
+        android:title="Sort by name"
         app:showAsAction="ifRoom" />
 
+    <item
+        android:id="@+id/action_sort_points"
+        android:icon="@drawable/ic_sort_black_24dp"
+        android:title="Sort by point"
+        app:showAsAction="ifRoom" />
 </menu>

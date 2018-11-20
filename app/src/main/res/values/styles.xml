@@ -1,62 +1,12 @@
 <resources>
-
     <style name="LightTheme" parent="Theme.AppCompat.Light">
         <item name="android:textColor">@android:color/black</item>
         <item name="colorPrimary">@android:color/white</item>
         <item name="colorPrimaryDark">@android:color/white</item>
         <item name="colorAccent">@android:color/black</item>
         <item name="android:fontFamily">@font/gs_medium</item>
-        <item name="settingsIcon">@drawable/ic_settings_black_24dp</item>
-        <item name="pauseIcon">@drawable/ic_pause_circle_filled_black_24dp</item>
-        <item name="nextIcon">@drawable/ic_skip_next_black_24dp</item>
-        <item name="prevIcon">@drawable/ic_skip_previous_black_24dp</item>
-        <item name="android:windowEnterTransition">@android:transition/slide_right</item>
-        <item name="android:windowExitTransition">@android:transition/slide_left</item>
         <item name="android:windowBackground">@android:color/white</item>
-        <item name="preferenceTheme">
-            @style/PreferenceThemeOverlay.v14.Material
-        </item>
         <item name="android:windowLightStatusBar">true</item>
-    </style>
-
-    <style name="GreenTheme" parent="Theme.AppCompat.Light">
-        <item name="android:fontFamily">@font/gs_medium</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDarkGreenTheme</item>
-        <item name="colorPrimary">@color/colorPrimaryGreenTheme</item>
-        <item name="colorAccent">@color/colorAccentGreenTheme</item>
-        <item name="android:textColorSecondary">@android:color/darker_gray</item>
-        <item name="android:textColorPrimary">@android:color/white</item>
-        <item name="android:textColor">@android:color/white</item>
-        <item name="settingsIcon">@drawable/ic_settings_white_24dp</item>
-        <item name="pauseIcon">@drawable/ic_pause_circle_filled_white_24dp</item>
-        <item name="nextIcon">@drawable/ic_skip_next_white_24dp</item>
-        <item name="prevIcon">@drawable/ic_skip_previous_white_24dp</item>
-        <item name="android:windowBackground">@color/colorPrimaryGreenTheme</item>
-        <item name="android:windowEnterTransition">@android:transition/slide_right</item>
-        <item name="android:windowExitTransition">@android:transition/slide_left</item>
-        <item name="preferenceTheme">
-            @style/PreferenceThemeOverlay.v14.Material
-        </item>
-    </style>
-
-    <style name="OrangeTheme" parent="Theme.AppCompat.Light">
-        <item name="android:fontFamily">@font/gs_medium</item>
-        <item name="android:textColorSecondary">@android:color/darker_gray</item>
-        <item name="colorPrimary">@color/colorPrimaryOrangeTheme</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDarkOrangeTheme</item>
-        <item name="colorAccent">@color/colorAccentOrangeTheme</item>
-        <item name="android:textColorPrimary">@android:color/white</item>
-        <item name="android:textColor">@android:color/white</item>
-        <item name="settingsIcon">@drawable/ic_settings_white_24dp</item>
-        <item name="pauseIcon">@drawable/ic_pause_circle_filled_white_24dp</item>
-        <item name="nextIcon">@drawable/ic_skip_next_white_24dp</item>
-        <item name="prevIcon">@drawable/ic_skip_previous_white_24dp</item>
-        <item name="android:windowBackground">@color/colorPrimaryOrangeTheme</item>
-        <item name="android:windowEnterTransition">@android:transition/slide_right</item>
-        <item name="android:windowExitTransition">@android:transition/slide_left</item>
-        <item name="preferenceTheme">
-            @style/PreferenceThemeOverlay.v14.Material
-        </item>
     </style>
 
 </resources>

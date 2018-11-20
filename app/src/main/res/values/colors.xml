@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimaryGreenTheme">#355555</color>
-    <color name="colorPrimaryDarkGreenTheme">#2a4444</color>
-    <color name="colorAccentGreenTheme">#5fa877</color>
-    <color name="colorPrimaryOrangeTheme">#a83814</color>
-    <color name="colorPrimaryDarkOrangeTheme">#77260c</color>
-    <color name="colorAccentOrangeTheme">#E64A19</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
 </resources>
